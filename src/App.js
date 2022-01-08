@@ -6,6 +6,7 @@ import Photos from './Photos';
 import About from './About';
 
 function App() {
+
 	return (
 		<div id='page-container'>
 			<Switch>
