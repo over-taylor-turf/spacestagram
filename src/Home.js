@@ -4,7 +4,6 @@ import './App.css';
 const KEY = process.env.REACT_APP_NASA_API_KEY;
 
 function Home() {
-
 	// Use State
 	const [imageURL, setImageURL] = useState();
 	const [fullCameraName, setFullCameraName] = useState();
@@ -31,7 +30,6 @@ function Home() {
 			});
 
 	// Date Conversion
-
 
 	// Use Effect
 	useEffect(() => {
