@@ -1,48 +1,69 @@
 /* Style Reset */
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 }
 
-ol, ul {
-  list-style: none;
+ol,
+ul {
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 #page-container {
-  height: 100vh !important;
-  background-color: #17202A;
+	height: 100% !important;
+	background-color: #17202a;
 }
 
 * {
-  color: #8A98A5;
+	color: #8a98a5;
 }
 
 #testing {
-  height: 50vh;
-  width: 50vw;
-  border: 2px solid #8A98A5;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+	height: 50vh;
+	width: 50vw;
+	border: 2px solid #8a98a5;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-h1, .homepage-photo {
-  text-align: center;
+h1,
+.homepage-photo {
+	text-align: center;
+}
+
+#homepage-wrapper {
+	height: 60vh;
+	background-position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #8a98a5;
 }
