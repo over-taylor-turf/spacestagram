@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Nav from './Nav';
 import './App.css';
 
 const KEY = process.env.REACT_APP_NASA_API_KEY;
@@ -31,6 +32,7 @@ function Home() {
 
 	return (
 		<div>
+			<Nav />
 			<h1>Welcome to Spacestagram 🪐</h1>
 			<img
 				id='homepage-wrapper'

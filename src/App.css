@@ -67,3 +67,50 @@ h1,
 	margin-right: auto;
 	border: 2px solid #8a98a5;
 }
+
+/* H A M B U R G E R  M E N U */
+
+.fa-bars {
+    font-size: 25px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: black;
+  }
+
+.fa-bars:hover {
+    color: #98817D;
+  }
+
+.hamburger-menu a { 
+    text-decoration: none;
+  }
+
+  .hamburger-menu p {
+    text-align: right;
+    margin: 2px;
+    padding: 5px;
+    font-size: 1.15em;
+    color: black;
+  }
+
+  .hamburger-menu p:hover {
+    color: white;
+  }
+
+  .hamburger-menu {
+    position: fixed;
+    right: 10px;
+    top: 30px;
+    background-color: #98817D;
+    border-radius: 10px;
+  }
+
+  .header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9vw;
+    max-height: 50px;
+    background-color: #C4C9B0;
+  }
