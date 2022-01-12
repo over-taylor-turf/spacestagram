@@ -37,9 +37,9 @@ img {
 	height: auto;
 }
 
-#page-container {
+body {
 	height: 100% !important;
-	background-image: linear-gradient(to bottom right, #17202a, #343B3C);
+	background-color: #17202a;
 }
 
 * {
@@ -155,7 +155,10 @@ h1 {
 
 .imageTitle {
 	font-weight: 700;
-	font-size: 4vw;
+	font-size: 5vw;
+	margin: auto;
+	width: 90vw;
+	margin-top: 5px;
 }
 
 .authorCredit {
@@ -166,4 +169,13 @@ footer {
 	font-size: 3vw;
 	text-align: center;
 	padding-bottom: 5px;
+}
+
+/* About */
+
+.about-text {
+	font-weight: 500;
+	font-size: 3vw;
+	width: 90vw;
+	margin: auto;
 }

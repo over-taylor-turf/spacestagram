@@ -41,14 +41,15 @@ function Home() {
 				src={imageOfTheDay}
 				alt='NASA footage of the day'
 			/>
+			<h3 className='imageTitle'>{imageTitle}</h3>
 			<div className='featuredImage'>
-				<h3 className='imageTitle'>{imageTitle}</h3>
 				<h4 className='authorCredit'>{authorCredit}</h4>
 				<p className='imageInfo'>{imageInfo}</p>
 			</div>
 
 			<footer>
-				Made with <i class='fas fa-heart'></i> by Taylor Overturf&nbsp; | &nbsp;January 2022
+				Made with <i class='fas fa-heart'></i> by Taylor Overturf&nbsp; |
+				&nbsp;January 2022
 			</footer>
 		</div>
 	);
