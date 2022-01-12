@@ -39,8 +39,11 @@ const Nav = () => {
 	return (
 		<div className='header-container'>
 			<Link to='/'>
-				<p className='homepage'>Spacestagram</p>
+				<span>
+					<i class='fas fa-meteor'></i>
+				</span>
 			</Link>
+
 			<div className='hamburger-menu'>
 				<span
 					id='icon'

@@ -33,15 +33,23 @@ function Home() {
 	return (
 		<div>
 			<Nav />
-			<h1>Welcome to Spacestagram 🪐</h1>
+			<h1>
+				Spacestagram &nbsp;<i class='fas fa-user-astronaut'></i>
+			</h1>
 			<img
 				id='homepage-wrapper'
 				src={imageOfTheDay}
 				alt='NASA footage of the day'
 			/>
-			<h3>{imageTitle}</h3>
-			<h4>{authorCredit}</h4>
-			<p>{imageInfo}</p>
+			<div className='featuredImage'>
+				<h3 className='imageTitle'>{imageTitle}</h3>
+				<h4 className='authorCredit'>{authorCredit}</h4>
+				<p className='imageInfo'>{imageInfo}</p>
+			</div>
+
+			<footer>
+				Made with <i class='fas fa-heart'></i> by Taylor Overturf&nbsp; | &nbsp;January 2022
+			</footer>
 		</div>
 	);
 }
