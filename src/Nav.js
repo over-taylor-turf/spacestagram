@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 const Nav = () => {
+	// Use State
 	const [hamburger, setHamburger] = useState(false);
 
+	// Toggle Hamburger Menu
 	const handleClick = () => {
 		setHamburger(!hamburger);
 	};
@@ -14,6 +16,7 @@ const Nav = () => {
 		handleHamburger();
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+	// Hamburger Menu Display
 	const handleHamburger = () => {
 		if (hamburger === true) {
 			return (

@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Nav from './Nav';
-// import './Home.css';
-// import Footer from '../Footer/Footer';
-// import Menu from '../NavBar/NavBar';
 
+// NASA API Key
 const KEY = process.env.REACT_APP_NASA_API_KEY;
 
 function Photos() {
-	
 	// Use State
 	const [imageURL, setImageURL] = useState();
 	const [fullCameraName, setFullCameraName] = useState();
@@ -19,7 +16,7 @@ function Photos() {
 	// Random Number Generator for Photos
 	const randomPhoto = Math.floor(Math.random() * 855);
 
-	// API Call
+	// API call to photo library.
 	const makeAPICall = () =>
 		fetch(
 			`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${KEY}`
@@ -41,7 +38,7 @@ function Photos() {
 
 	return (
 		<>
-		<Nav />
+			<Nav />
 			<h1>the final frontier</h1>
 			<div className='homepage-photo'>
 				<h3>{shortCameraName} Footage</h3>

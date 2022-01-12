@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import './App.css';
 
+// NASA API Key
 const KEY = process.env.REACT_APP_NASA_API_KEY;
 
 function Home() {
@@ -9,21 +10,19 @@ function Home() {
 	const [imageOfTheDay, setImageOfTheDay] = useState();
 	const [imageTitle, setImageTitle] = useState();
 	const [imageInfo, setImageInfo] = useState();
-	const [authorCredit, setAuthorCredit] = useState(); 
+	const [authorCredit, setAuthorCredit] = useState();
+	const [hoverText, setHoverText] = useState({ display: 'none' });
 
-	// API Call
+	// API call to "APOD," astronomy photo of the day.
 	const makeAPICall2 = () =>
 		fetch(`https://api.nasa.gov/planetary/apod?api_key=${KEY}`)
 			.then((response) => response.json())
 			.then((results) => {
-				// console.log(results.url);
 				setImageOfTheDay(results.url);
 				setImageTitle(results.title);
 				setImageInfo(results.explanation);
 				setAuthorCredit(results.copyright);
 			});
-
-	// Date Conversion
 
 	// Use Effect
 	useEffect(() => {
@@ -36,6 +35,7 @@ function Home() {
 			<h1>
 				Spacestagram &nbsp;<i class='fas fa-user-astronaut'></i>
 			</h1>
+			<p class="featured-photo-text">featured photo of the day</p>
 			<img
 				id='homepage-wrapper'
 				src={imageOfTheDay}
